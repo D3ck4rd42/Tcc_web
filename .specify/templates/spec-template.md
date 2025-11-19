@@ -1,9 +1,18 @@
 # Feature Specification: [FEATURE NAME]
 
-**Feature Branch**: `[###-feature-name]`  
-**Created**: [DATE]  
-**Status**: Draft  
+**Feature Branch**: `[###-feature-name]`
+**Created**: [DATE]
+**Status**: Draft
 **Input**: User description: "$ARGUMENTS"
+
+## Constitution Alignment
+
+Ensure this feature aligns with core principles:
+- **Authenticité**: Content and functionality reflect genuine club values
+- **Accessibilité**: Mobile-first, WCAG 2.1 AA, intuitive for all ages
+- **Simplicité**: Clean design, no unnecessary complexity, volunteer-friendly
+- **Performance**: Load < 3s, Core Web Vitals met, optimized assets
+- **Maintenabilité**: TypeScript strict, Zod validation, documented code
 
 ## User Scenarios & Testing *(mandatory)*
 

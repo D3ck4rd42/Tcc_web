@@ -31,7 +31,43 @@
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-[Gates determined based on constitution file]
+### Principle I: Authenticité (Authenticity)
+- [ ] Feature reflects genuine club values (friendly village atmosphere + pedagogical excellence)
+- [ ] Content is honest and transparent (no over-promising)
+- [ ] Uses real photos and testimonials (with authorizations) where applicable
+
+### Principle II: Accessibilité (Accessibility)
+- [ ] Mobile-first design approach documented
+- [ ] WCAG 2.1 Level AA compliance planned
+- [ ] Navigation intuitive for all age groups
+- [ ] Touch targets minimum 44x44px
+- [ ] Text minimum 16px, contrast ratios meet standards (4.5:1 normal, 3:1 large)
+
+### Principle III: Simplicité (Simplicity)
+- [ ] Design is clean with clear navigation (max 7 menu items)
+- [ ] No unnecessary complexity introduced
+- [ ] Admin interface accessible to non-technical volunteers
+- [ ] Follows YAGNI: only builds what's explicitly needed
+
+### Principle IV: Performance
+- [ ] Page load time target < 3 seconds
+- [ ] Core Web Vitals targets: LCP < 2.5s, FID < 100ms, CLS < 0.1
+- [ ] Images use next/image with optimization
+- [ ] Fonts use next/font with display: swap
+- [ ] PageSpeed targets: Mobile > 80, Desktop > 90
+
+### Principle V: Maintenabilité (Maintainability)
+- [ ] TypeScript strict mode enabled (no `any` except justified)
+- [ ] All components properly typed with interfaces
+- [ ] All user inputs validated with Zod
+- [ ] Code documented and commented
+- [ ] Follows naming conventions (PascalCase components, camelCase functions, etc.)
+
+### Technical Standards
+- [ ] Stack: Next.js 14+, TypeScript strict, Tailwind CSS
+- [ ] Backend: Next.js API Routes, PostgreSQL, Prisma/Drizzle
+- [ ] Security: Zod validation, rate limiting, HTTPS, security headers
+- [ ] Testing: Manual (Chrome/Firefox/Safari), Responsive, Lighthouse, Accessibility
 
 ## Project Structure
 

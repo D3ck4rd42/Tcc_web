@@ -157,6 +157,49 @@ Examples of foundational tasks (adjust based on your project):
 - [ ] TXXX Security hardening
 - [ ] TXXX Run quickstart.md validation
 
+## Constitution Compliance Check (MANDATORY)
+
+**Execute before final deployment:**
+
+### Accessibility Validation
+- [ ] Run Lighthouse Accessibility audit (score > 95/100 required)
+- [ ] Run axe DevTools (0 violations required)
+- [ ] Test keyboard navigation (full functionality required)
+- [ ] Verify all images have alt text
+- [ ] Verify all form fields have visible labels
+- [ ] Check heading hierarchy (semantic H1→H2→H3)
+- [ ] Test responsive design (mobile, tablet, desktop)
+
+### Performance Validation
+- [ ] Run Lighthouse Performance audit (Mobile > 80, Desktop > 90 required)
+- [ ] Verify Core Web Vitals: LCP < 2.5s, FID < 100ms, CLS < 0.1
+- [ ] Verify page load time < 3 seconds
+- [ ] Check all images use next/image with optimization
+- [ ] Check fonts use next/font with display: swap
+
+### Code Quality & Maintainability
+- [ ] TypeScript strict mode enabled (no `any` except justified)
+- [ ] All components properly typed with interfaces
+- [ ] All user inputs validated with Zod
+- [ ] No console.log in production code
+- [ ] Complex logic documented with comments
+- [ ] Code follows naming conventions
+
+### Security Validation
+- [ ] All API routes have rate limiting
+- [ ] All user inputs use Zod validation server-side
+- [ ] Security headers configured (CSP, X-Frame-Options, etc.)
+- [ ] HTTPS enabled (if production deployment)
+- [ ] No hardcoded secrets or credentials
+- [ ] Run npm audit (0 high/critical vulnerabilities)
+
+### Testing Validation
+- [ ] Manual testing on Chrome, Firefox, Safari
+- [ ] HTML validation (W3C)
+- [ ] All forms tested (validation, submission, emails)
+- [ ] Link validation (no broken links)
+- [ ] RGPD compliance verified (consent banners, privacy policy)
+
 ---
 
 ## Dependencies & Execution Order
