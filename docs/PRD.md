@@ -48,7 +48,7 @@ Créer un site web moderne, fonctionnel et authentique qui servira de **vitrine 
 - **Budget:** ~60-120€/an (hébergement OVH + nom de domaine)
 - **Solution:** Développement custom avec Claude Code (LLM de développement)
 - **Hébergement:** OVH ou hébergeur similaire (mutualisé ou VPS léger)
-- **Stack:** Site web moderne (Next.js/React ou WordPress selon besoins)
+- **Stack:** Application web moderne (Next.js/React avec interface d'administration custom)
 - **Ressources:** Développement par IA + gestion contenu par bénévoles
 - **Timeline:** Lancement initial sous 2-3 mois
 
@@ -301,16 +301,16 @@ Créer une présence en ligne qui reflète l'authenticité du TCC : un club de v
 
 | ID | User Story | Critères d'Acceptation | Priorité |
 |----|------------|------------------------|----------|
-| US-A01 | En tant qu'**administrateur**, je veux accéder à un tableau de bord d'administration intuitif pour gérer le site facilement | - Interface WordPress admin (/wp-admin)<br>- Tableau de bord avec statistiques clés<br>- Menu de navigation clair<br>- Accès rapide aux fonctions principales<br>- Responsive (gérable depuis tablette) | P0 |
-| US-A02 | En tant qu'**administrateur**, je veux modifier tous les textes du site (titres, paragraphes, descriptions) sans toucher au code | - Éditeur visuel WordPress Gutenberg<br>- Édition directe page par page<br>- Prévisualisation avant publication<br>- Sauvegarde automatique brouillons<br>- Historique des révisions | P0 |
-| US-A03 | En tant qu'**administrateur**, je veux gérer facilement les images du site (ajouter, remplacer, supprimer, redimensionner) | - Bibliothèque médias WordPress<br>- Upload images par glisser-déposer<br>- Édition basique (recadrage, rotation)<br>- Remplacement image en 1 clic<br>- Génération miniatures automatique<br>- Optimisation automatique (Smush plugin) | P0 |
-| US-A04 | En tant qu'**administrateur**, je veux créer et publier des actualités avec un éditeur visuel sans compétences techniques | - Éditeur Gutenberg par blocs<br>- Ajout texte, images, vidéos, galeries<br>- Mise en forme (gras, italique, listes, titres)<br>- Aperçu temps réel<br>- Catégories et tags<br>- Publication immédiate ou programmée | P0 |
-| US-A05 | En tant qu'**administrateur**, je veux gérer les pages du site (créer, modifier, supprimer, réorganiser) facilement | - Création page en quelques clics<br>- Éditeur visuel Gutenberg<br>- Choix template (page standard, contact, etc.)<br>- Réorganisation hiérarchie pages<br>- Modification URL (slug)<br>- Paramètres SEO par page (Rank Math) | P0 |
-| US-A06 | En tant qu'**administrateur**, je veux ajouter et gérer les événements du club (tournois, stages, fêtes) dans un calendrier | - Plugin The Events Calendar<br>- Formulaire simple ajout événement<br>- Date, heure, lieu, description, image<br>- Catégories événements<br>- Vue calendrier et liste<br>- Événements récurrents | P0 |
+| US-A01 | En tant qu'**administrateur**, je veux accéder à un tableau de bord d'administration intuitif pour gérer le site facilement | - Interface d'administration custom (/admin)<br>- Tableau de bord avec statistiques clés<br>- Menu de navigation clair<br>- Accès rapide aux fonctions principales<br>- Responsive (gérable depuis tablette) | P0 |
+| US-A02 | En tant qu'**administrateur**, je veux modifier tous les textes du site (titres, paragraphes, descriptions) sans toucher au code | - Éditeur visuel WYSIWYG (type TipTap ou Slate)<br>- Édition directe page par page<br>- Prévisualisation avant publication<br>- Sauvegarde automatique brouillons<br>- Historique des révisions | P0 |
+| US-A03 | En tant qu'**administrateur**, je veux gérer facilement les images du site (ajouter, remplacer, supprimer, redimensionner) | - Bibliothèque médias intégrée<br>- Upload images par glisser-déposer<br>- Édition basique (recadrage, rotation)<br>- Remplacement image en 1 clic<br>- Génération miniatures automatique<br>- Optimisation automatique (Sharp/ImageKit) | P0 |
+| US-A04 | En tant qu'**administrateur**, je veux créer et publier des actualités avec un éditeur visuel sans compétences techniques | - Éditeur rich text par blocs (type WordPress)<br>- Ajout texte, images, vidéos, galeries<br>- Mise en forme (gras, italique, listes, titres)<br>- Aperçu temps réel<br>- Catégories et tags<br>- Publication immédiate ou programmée | P0 |
+| US-A05 | En tant qu'**administrateur**, je veux gérer les pages du site (créer, modifier, supprimer, réorganiser) facilement | - Création page en quelques clics<br>- Éditeur visuel intégré<br>- Choix template (page standard, contact, etc.)<br>- Réorganisation hiérarchie pages<br>- Modification URL (slug)<br>- Paramètres SEO par page | P0 |
+| US-A06 | En tant qu'**administrateur**, je veux ajouter et gérer les événements du club (tournois, stages, fêtes) dans un calendrier | - Module de gestion d'événements intégré<br>- Formulaire simple ajout événement<br>- Date, heure, lieu, description, image<br>- Catégories événements<br>- Vue calendrier et liste<br>- Événements récurrents | P0 |
 | US-A07 | En tant qu'**administrateur**, je veux consulter les formulaires de contact et pré-inscriptions reçus | - Notification email à chaque soumission<br>- Liste des messages dans admin<br>- Export CSV des données<br>- Protection anti-spam (reCAPTCHA) | P0 |
-| US-A08 | En tant qu'**administrateur**, je veux modifier les menus de navigation (ajouter, retirer, réorganiser liens) sans développeur | - Interface drag & drop WordPress<br>- Menu principal (header)<br>- Menu footer<br>- Ajout pages, catégories, liens externes<br>- Réorganisation par glisser-déposer<br>- Sous-menus possibles | P0 |
-| US-A09 | En tant qu'**administrateur**, je veux gérer les membres de l'équipe (professeurs, bureau) avec photos et descriptions | - Custom Post Type "Équipe"<br>- Formulaire simple (nom, fonction, bio, photo)<br>- Ordre d'affichage personnalisable<br>- Affichage automatique sur page Équipe | P0 |
-| US-A10 | En tant qu'**administrateur**, je veux consulter les statistiques de fréquentation du site pour mesurer l'impact | - Plugin MonsterInsights (Google Analytics)<br>- Statistiques dans tableau de bord WordPress<br>- Pages les plus vues<br>- Sources de trafic<br>- Données en temps réel | P1 |
+| US-A08 | En tant qu'**administrateur**, je veux modifier les menus de navigation (ajouter, retirer, réorganiser liens) sans développeur | - Interface drag & drop pour menus<br>- Menu principal (header)<br>- Menu footer<br>- Ajout pages, catégories, liens externes<br>- Réorganisation par glisser-déposer<br>- Sous-menus possibles | P0 |
+| US-A09 | En tant qu'**administrateur**, je veux gérer les membres de l'équipe (professeurs, bureau) avec photos et descriptions | - Module "Équipe" dédié<br>- Formulaire simple (nom, fonction, bio, photo)<br>- Ordre d'affichage personnalisable<br>- Affichage automatique sur page Équipe | P0 |
+| US-A10 | En tant qu'**administrateur**, je veux consulter les statistiques de fréquentation du site pour mesurer l'impact | - Intégration Google Analytics<br>- Statistiques dans tableau de bord admin<br>- Pages les plus vues<br>- Sources de trafic<br>- Données en temps réel | P1 |
 
 ### 5.5 Cas d'Usage Détaillés
 
@@ -612,27 +612,29 @@ Créer une présence en ligne qui reflète l'authenticité du TCC : un club de v
 - ✅ Emails de bienvenue nouveaux inscrits
 - ✅ Rappels événements automatiques
 
-### 6.4 Interface d'Administration WordPress (P0 - MVP)
+### 6.4 Interface d'Administration Custom (P0 - MVP)
 
-**Objectif:** Fournir une interface intuitive permettant aux bénévoles de gérer tous les contenus du site sans compétences techniques
+**Objectif:** Fournir une interface intuitive permettant aux bénévoles de gérer tous les contenus du site sans compétences techniques, avec des fonctionnalités similaires à WordPress
 
-#### 6.4.1 Tableau de Bord WordPress
+#### 6.4.1 Tableau de Bord d'Administration
 
-**URL d'accès:** https://tcclairefontaine.fr/wp-admin
+**URL d'accès:** https://tcclairefontaine.fr/admin
 
 **Fonctionnalités du Dashboard:**
 - 📊 **Aperçu statistiques** : Articles récents, commentaires, pages populaires
-- 📈 **Analytics intégré** : Visiteurs du jour/semaine/mois (via MonsterInsights)
+- 📈 **Analytics intégré** : Visiteurs du jour/semaine/mois (via Google Analytics)
 - ⚡ **Actions rapides** : "Créer un article", "Ajouter une page", "Gérer médias"
-- 📢 **Mises à jour** : WordPress core, thème, plugins (notifications)
+- 📢 **Mises à jour** : Notifications de mises à jour de dépendances disponibles
 - 🔔 **Notifications** : Nouveaux formulaires de contact reçus
-- 🎨 **Personnalisation rapide** : Liens vers Apparence > Personnaliser
+- 🔒 **Sécurité** : État de sécurité de l'application, vulnérabilités détectées
+- 🎨 **Personnalisation rapide** : Liens vers Paramètres > Apparence
 
 **Menu de navigation admin (sidebar) :**
 ```
 Tableau de bord
 ├── Accueil
-└── Mises à jour
+├── Mises à jour
+└── Sécurité
 
 Articles (Actualités)
 ├── Tous les articles
@@ -641,34 +643,28 @@ Articles (Actualités)
 └── Étiquettes
 
 Médias
-└── Bibliothèque
+├── Bibliothèque
 └── Ajouter
 
 Pages
 ├── Toutes les pages
 └── Ajouter
 
-Événements (The Events Calendar)
-├── Événements
+Événements
+├── Tous les événements
 ├── Ajouter un événement
 └── Paramètres
 
-Équipe (Custom Post Type)
+Équipe
 ├── Tous les membres
 └── Ajouter un membre
 
 Commentaires (si activés)
 
 Apparence
-├── Thèmes
 ├── Personnaliser
-├── Widgets
 ├── Menus
-└── Éditeur de thème (réservé développeur)
-
-Extensions (Plugins)
-├── Extensions installées
-└── Ajouter
+└── Paramètres visuels
 
 Utilisateurs
 ├── Tous les utilisateurs
@@ -676,19 +672,19 @@ Utilisateurs
 ├── Votre profil
 └── Rôles (Admin, Éditeur, Auteur)
 
-Réglages
+Paramètres
 ├── Général
-├── Écriture
-├── Lecture
-├── Discussion
+├── Contenu
 ├── Médias
 ├── Permaliens
-└── Confidentialité
+├── Sécurité
+└── Confidentialité (RGPD)
 ```
 
-#### 6.4.2 Éditeur Gutenberg (Éditeur Visuel par Blocs)
+#### 6.4.2 Éditeur Visuel WYSIWYG (Type WordPress Gutenberg)
 
-**Principe:** Éditeur WordPress moderne type "WYSIWYG" (What You See Is What You Get) avec système de blocs
+**Principe:** Éditeur moderne type "WYSIWYG" (What You See Is What You Get) avec système de blocs, inspiré de WordPress Gutenberg
+**Technologie:** TipTap ou Slate.js avec système de blocs personnalisé
 
 **Fonctionnalités Éditeur:**
 
@@ -740,7 +736,7 @@ Réglages
 - **Archives** : Liste archives par mois
 - **Catégories** : Liste catégories
 - **Réseaux sociaux** : Icônes liens sociaux
-- **Formulaire de contact** : Intégré Contact Form 7
+- **Formulaire de contact** : Module de contact intégré
 
 **Blocs Intégrations (Embeds):**
 - **YouTube** : Vidéos YouTube
@@ -868,27 +864,27 @@ Réglages
 - Widget "Prochains événements" (sidebar)
 - Export Google Calendar / iCal
 
-#### 6.4.5 Gestion des Formulaires (Contact Form 7)
+#### 6.4.5 Gestion des Formulaires
 
-**Accès:** Formulaires > Tous les formulaires
+**Accès:** Admin > Formulaires > Tous les formulaires
 
 **Fonctionnalités:**
 - ✅ **Création formulaire** :
-  - Interface simple avec shortcodes
-  - Champs : texte, email, téléphone, textarea, dropdown, checkbox, radio, date, fichier
-  - Validation automatique (email valide, champs requis)
-  - Protection anti-spam : reCAPTCHA Google (gratuit)
+  - Interface intuitive de création de formulaires
+  - Champs disponibles : texte, email, téléphone, textarea, dropdown, checkbox, radio, date, fichier
+  - Validation automatique (email valide, champs requis) via Zod
+  - Protection anti-spam : reCAPTCHA v3 ou honeypot
 - ✅ **Notification email** :
-  - Email envoyé à admin à chaque soumission
+  - Email envoyé à admin à chaque soumission (Resend ou Nodemailer)
   - Personnalisation sujet, corps email
   - Multiple destinataires possibles
-- ✅ **Email de confirmation** : Auto-réponse à l'utilisateur
+- ✅ **Email de confirmation** : Auto-réponse automatique à l'utilisateur
 - ✅ **Messages personnalisés** : Succès, erreur, validation
-- ✅ **Stockage soumissions** : Plugin Flamingo (gratuit)
-  - Liste tous les messages dans WordPress admin
-  - Export CSV
-    - Recherche, tri, filtres
-- ✅ **Intégration** : Shortcode à copier-coller dans pages/articles
+- ✅ **Stockage soumissions** : Base de données PostgreSQL
+  - Liste tous les messages dans l'interface admin
+  - Export CSV des données
+  - Recherche, tri, filtres
+- ✅ **Intégration** : Insertion directe dans les pages via l'éditeur
 
 **Formulaires pré-configurés (livrés avec site) :**
 1. **Formulaire Contact général** : Page Contact
@@ -936,7 +932,7 @@ Contact
 
 **Accès:** Utilisateurs > Tous les utilisateurs
 
-**Rôles WordPress (par ordre de permissions) :**
+**Rôles utilisateurs (par ordre de permissions) :**
 
 1. **Administrateur** (Responsable Web)
    - Accès complet à tout
@@ -1018,49 +1014,91 @@ Contact
 - Test responsive (mobile, tablette, desktop)
 - Publier ou Abandonner modifications
 
-#### 6.4.9 Sauvegardes Automatiques (UpdraftPlus)
+#### 6.4.9 Sauvegardes Automatiques
 
-**Accès:** Réglages > UpdraftPlus Backups
+**Accès:** Admin > Paramètres > Sauvegardes
 
-**Configuration recommandée :**
+**Configuration automatique :**
 - ✅ **Fréquence** :
-  - Base de données : Quotidienne (contient articles, pages, paramètres)
-  - Fichiers (thème, plugins, uploads) : Hebdomadaire
-- ✅ **Nombre à conserver** : 7 jours base données, 4 semaines fichiers
+  - Base de données PostgreSQL : Quotidienne (contient tous les contenus)
+  - Fichiers médias uploadés : Quotidienne
+  - Configuration application : Quotidienne
+- ✅ **Rétention** : 30 derniers jours conservés
 - ✅ **Destination** :
-  - **Option 1 (Gratuit)** : Google Drive, Dropbox, ou FTP distant
-  - **Option 2** : Serveur OVH (espace inclus)
-  - **Recommandation** : Google Drive du club (gratuit 15 Go)
+  - **Option 1** : Stockage local serveur OVH (espace dédié)
+  - **Option 2** : Stockage externe (S3, Backblaze B2, ou Google Drive)
+  - **Recommandation** : Double backup (local + cloud externe)
 - ✅ **Notifications email** : Succès/échec backup
-- ✅ **Restauration en 1 clic** : En cas de problème
-- ✅ **Migration site** : Export/import complet facilité
+- ✅ **Restauration en quelques clics** : Interface admin dédiée
+- ✅ **Vérification intégrité** : Test mensuel automatique des backups
+- ✅ **Export/import** : Migration facilitée vers nouveau serveur
 
-#### 6.4.10 Sécurité (Wordfence)
+#### 6.4.10 Sécurité & Mises à Jour
 
-**Accès:** Wordfence > Dashboard
+**Accès:** Admin > Tableau de bord > Sécurité
 
-**Protections actives :**
-- ✅ **Firewall** : Blocage tentatives intrusion
-- ✅ **Scan malware** : Quotidien, détection fichiers modifiés
+**Protections intégrées :**
+- ✅ **Rate limiting API** : Limitation automatique des requêtes par IP
+- ✅ **Protection CSRF** : Tokens anti-Cross-Site Request Forgery
+- ✅ **Validation XSS** : Protection contre injections de scripts
+- ✅ **SQL Injection** : Protection via ORM Prisma (requêtes paramétrées)
 - ✅ **Protection connexion** :
   - Limitation tentatives (5 max en 20 min)
-  - Blocage IP attaquants
-  - 2FA (Two-Factor Authentication) disponible
-- ✅ **Monitoring en temps réel** : Trafic, connexions, attaques
-- ✅ **Alertes email** : Problèmes sécurité critiques
-- ✅ **Blocage pays** : Optionnel (bloquer pays hors France/Europe)
+  - Blocage temporaire IP suspects
+  - 2FA (Two-Factor Authentication) avec NextAuth.js
+  - Sessions sécurisées avec JWT
+- ✅ **HTTPS obligatoire** : SSL Let's Encrypt automatique
+- ✅ **Headers sécurité** : CSP, X-Frame-Options, HSTS
+- ✅ **Validation données** : Zod pour toutes les entrées utilisateur
 
-**Actions admin :**
-- Consulter log sécurité
-- Débloquer IP si blocage légitime
-- Lancer scan manuel
-- Voir tentatives connexion échouées
+**Surveillance des dépendances :**
+- ✅ **Audit automatique** : npm audit quotidien
+- ✅ **Dependabot** : Détection automatique de vulnérabilités
+- ✅ **Notifications admin** : Alertes dans le dashboard pour :
+  - Dépendances avec vulnérabilités critiques
+  - Mises à jour de sécurité disponibles
+  - Packages obsolètes
+- ✅ **Vue d'ensemble** : Dashboard affichant :
+  - Nombre de dépendances à jour / obsolètes
+  - Vulnérabilités détectées (critique/haute/moyenne/faible)
+  - Dernière vérification de sécurité
+  - Recommandations de mises à jour
 
-#### 6.4.11 SEO (Rank Math)
+**Mises à jour facilitées :**
+- ✅ **Interface dédiée** : Section "Mises à jour" dans l'admin
+- ✅ **Un clic pour mettre à jour** :
+  - Mise à jour des dépendances non-breaking
+  - Sauvegarde automatique avant mise à jour
+  - Rollback possible en cas de problème
+- ✅ **Documentation** : Guide de mise à jour pour versions majeures
+- ✅ **Changelog** : Historique des mises à jour effectuées
+
+**Backups automatiques :**
+- ✅ **Base de données** : Backup quotidien PostgreSQL
+- ✅ **Médias** : Sauvegarde fichiers uploadés
+- ✅ **Rétention** : 30 derniers jours conservés
+- ✅ **Restauration** : Interface simple de restauration depuis l'admin
+
+**Logs & Monitoring :**
+- ✅ **Logs d'accès** : Connexions admin, modifications importantes
+- ✅ **Logs d'erreurs** : Erreurs applicatives avec stack traces
+- ✅ **Tentatives de connexion** : Suivi échecs et succès
+- ✅ **Alertes email** : Notifications pour événements critiques
+
+**Actions admin disponibles :**
+- Consulter logs de sécurité
+- Voir vulnérabilités détectées
+- Lancer audit de sécurité manuel
+- Mettre à jour les dépendances
+- Gérer les blocages IP
+- Télécharger backups
+- Voir historique des mises à jour
+
+#### 6.4.11 SEO (Module Intégré)
 
 **Accès (2 niveaux) :**
-1. **Par page/article** : Meta box Rank Math sous éditeur Gutenberg
-2. **Global** : Rank Math > Dashboard
+1. **Par page/article** : Panneau SEO dans l'éditeur
+2. **Global** : Admin > Paramètres > SEO
 
 **Par Page/Article (Meta Box) :**
 - ✅ **Analyse SEO** : Score /100 avec recommandations
@@ -1111,8 +1149,9 @@ Contact
 
 - ✅ **Support continu** :
   - Email support : support@tcclairefontaine.fr (alias vers responsable web)
-  - Documentation WordPress officielle : https://wordpress.org/documentation/
-  - Forum WordPress FR : https://wpfr.net/support/
+  - Documentation Next.js officielle : https://nextjs.org/docs
+  - Documentation React : https://react.dev
+  - Forum support communauté Next.js : https://github.com/vercel/next.js/discussions
 
 ---
 
@@ -1304,109 +1343,150 @@ Contact
 
 **Développement:** Claude Code (assistance IA pour développement)
 
-#### Option 1 (Recommandée pour MVP) : WordPress
+#### Option 1 (Écartée) : WordPress
 
-**Pourquoi WordPress :**
-- ✅ Facilité de gestion contenu pour bénévoles non-techniques
-- ✅ Interface d'administration intuitive
-- ✅ Écosystème riche de thèmes et plugins
-- ✅ Mises à jour faciles
-- ✅ Compatibilité OVH optimale (Module 1-clic)
-- ✅ Grande communauté française
-- ✅ SEO natif excellent
+**Pourquoi WordPress pourrait convenir :**
+- ✅ Facilité de gestion contenu
+- ✅ Écosystème riche
+- ✅ Grande communauté
 
-**Stack Technique WordPress:**
-- **CMS:** WordPress 6.x
-- **Thème:** GeneratePress Premium ou Astra Pro (~60€ one-time, optionnel) ou version gratuite
-- **Page Builder:** Elementor Free (suffisant pour MVP) ou Pro si budget
-- **Plugins essentiels:**
-  - **Formulaires:** Contact Form 7 ou WPForms Lite (gratuit)
-  - **SEO:** Rank Math ou Yoast SEO (gratuit)
-  - **Sécurité:** Wordfence Free ou iThemes Security
-  - **Performance:** WP Rocket (49$/an, recommandé) ou W3 Total Cache (gratuit)
-  - **Images:** Smush ou ShortPixel (optimisation automatique)
-  - **Galerie:** Envira Gallery Lite ou FooGallery (gratuit)
-  - **Événements:** The Events Calendar (gratuit)
-  - **Analytics:** MonsterInsights (intégration GA) ou code manuel
-  - **RGPD:** Complianz (gratuit)
-  - **Backup:** UpdraftPlus (gratuit, backups sur Google Drive)
+**Pourquoi WordPress est écarté pour ce projet :**
+- ❌ Besoin d'une interface d'administration sur-mesure
+- ❌ Contrôle total sur les fonctionnalités souhaité
+- ❌ Dépendance à de nombreux plugins tiers
+- ❌ Complexité de maintenance des plugins
+- ❌ Limitations de personnalisation de l'interface admin
 
-**Coût total WordPress:**
-- Hébergement OVH : 60-120€/an
-- Domaine : 10-15€/an
-- Thème Premium (optionnel) : 0-60€ one-time
-- WP Rocket (optionnel mais recommandé) : 49$/an (~45€)
-- **Total An 1 :** 70-240€ selon options
-- **Total années suivantes :** 70-180€/an
+#### Option 2 (RETENUE) : Next.js + Interface d'Administration Custom
 
-#### Option 2 (Alternative Moderne) : Next.js + Headless CMS
-
-**Pourquoi Next.js :**
+**Pourquoi Next.js + Admin Custom :**
 - ✅ Performance exceptionnelle (SSG/SSR)
 - ✅ SEO optimal
 - ✅ Expérience utilisateur fluide
 - ✅ Stack moderne et pérenne
 - ✅ Déploiement OVH compatible
+- ✅ Interface d'administration totalement personnalisée et intuitive
+- ✅ Contrôle total sur les fonctionnalités
+- ✅ Sécurité renforcée avec mises à jour simplifiées
+- ✅ Pas de dépendance à des plugins tiers
 
-**Stack Technique Next.js:**
+**Stack Technique Complète:**
+
+**Frontend (Site Public) :**
 - **Framework:** Next.js 14+ (App Router)
 - **Langage:** TypeScript
 - **Styling:** Tailwind CSS
-- **CMS Headless:**
-  - **Option A:** Strapi (gratuit, self-hosted sur OVH)
-  - **Option B:** Payload CMS (gratuit, moderne)
-  - **Option C:** Directus (gratuit, open-source)
-- **Formulaires:** React Hook Form + Resend ou Nodemailer
-- **Galerie:** Next Image + Lightbox
-- **Analytics:** Google Analytics 4 ou Plausible
-- **Déploiement:**
-  - Build sur OVH via Node.js
-  - PM2 pour process management
-  - Nginx reverse proxy
+- **Composants UI:** Shadcn/ui ou Radix UI
+- **Images:** Next/Image avec optimisation automatique (Sharp)
+- **Animations:** Framer Motion (optionnel)
 
-**Avantages Next.js:**
-- Performance maximale (score Lighthouse 95-100)
-- Contrôle total du code
-- Pas de plugins tiers à maintenir
-- Sécurité renforcée (moins de surface d'attaque)
+**Backend (API) :**
+- **Framework:** Next.js API Routes
+- **Base de données:** PostgreSQL (hébergée sur OVH)
+- **ORM:** Prisma ou Drizzle
+- **Authentication:** NextAuth.js
+- **Validation:** Zod
+- **File Storage:** Uploadthing ou stockage local optimisé
 
-**Inconvénients Next.js:**
-- Courbe d'apprentissage pour gestion contenu (interface admin CMS)
-- Mises à jour contenu nécessitent redéploiement (sauf CMS headless)
-- Moins accessible pour bénévoles non-techniques
+**Interface d'Administration:**
+- **Éditeur WYSIWYG:** TipTap (moderne, extensible) ou Slate.js
+- **Système de blocs:** Custom inspiré de Gutenberg
+- **Gestion médias:** Bibliothèque custom avec drag & drop
+- **Dashboard:** Charts avec Recharts ou Chart.js
+- **Formulaires:** React Hook Form + Zod validation
 
-**Recommandation:** Next.js si compétences techniques disponibles au club ET besoin performance maximale. Sinon **WordPress recommandé** pour facilité gestion.
+**Fonctionnalités Intégrées:**
+- **Formulaires contact:** Resend ou Nodemailer pour emails
+- **Galerie photos:** Lightbox custom (photoswipe)
+- **Calendrier événements:** React Big Calendar ou custom
+- **SEO:** next-seo + sitemap automatique
+- **Analytics:** Google Analytics 4 (intégration native)
+- **RGPD:** Module de consentement custom
 
-#### Option Retenue pour Ce Projet : WordPress
+**Sécurité & Maintenance:**
+- **Dépendances:** Surveillance automatique avec Dependabot
+- **Mises à jour:** npm audit automatique, notifications dans l'admin
+- **HTTPS:** SSL Let's Encrypt (gratuit via OVH)
+- **Rate limiting:** Protection API contre abus
+- **Validation:** Protection XSS, CSRF, SQL injection
+- **Backups:** Automatiques quotidiens (base de données + médias)
+
+**Déploiement:**
+- **Hébergement:** OVH VPS ou hébergement Node.js
+- **Build:** Automatisé via Git hooks
+- **Process:** PM2 pour process management
+- **Reverse proxy:** Nginx
+- **CI/CD:** Scripts de déploiement automatisés
+
+**Avantages de cette approche:**
+- ✅ Performance maximale (score Lighthouse 95-100)
+- ✅ Contrôle total du code et des fonctionnalités
+- ✅ Interface d'admin intuitive type WordPress pour les bénévoles
+- ✅ Pas de plugins tiers à maintenir (moins de vulnérabilités)
+- ✅ Sécurité renforcée avec mises à jour simplifiées
+- ✅ Coûts maîtrisés (pas de plugins premium)
+- ✅ Stack moderne et pérenne
+- ✅ Facilité de maintenance avec suivi automatique des dépendances
+
+#### Architecture Retenue : Next.js + Admin Custom
 
 **Justification:**
-- ✅ Bénévoles pourront gérer contenu facilement
-- ✅ Ajout actualités, événements, photos simple
-- ✅ Coût maîtrisé
-- ✅ Maintenance simplifiée
-- ✅ Compatible OVH (installation 1-clic)
-- ✅ Claude Code peut développer thème custom optimisé
+- ✅ Bénévoles pourront gérer contenu via interface intuitive type WordPress
+- ✅ Ajout actualités, événements, photos simple (éditeur WYSIWYG)
+- ✅ Coût maîtrisé (pas de plugins premium)
+- ✅ Maintenance simplifiée avec surveillance automatique des dépendances
+- ✅ Sécurité renforcée (moins de surface d'attaque)
+- ✅ Performance maximale (Next.js SSG/SSR)
+- ✅ Compatible OVH (hébergement Node.js ou VPS)
+- ✅ Claude Code peut développer l'application complète
 
-**Architecture WordPress Retenue:**
+**Architecture Next.js Retenue:**
 ```
-WordPress 6.x
-├── Thème Custom (développé par Claude Code)
+Application Next.js 14+
+├── Frontend Public (Site vitrine)
 │   ├── Design sur-mesure selon maquettes PRD
-│   ├── Optimisé performance (< 3s chargement)
-│   ├── Mobile-first responsive
-│   └── SEO optimisé (Schema.org, Open Graph)
-├── Plugins Minimaux (12 maximum)
-│   ├── Rank Math SEO
-│   ├── Contact Form 7
-│   ├── Smush (images)
-│   ├── UpdraftPlus (backup)
-│   ├── Wordfence (sécurité)
-│   ├── The Events Calendar
-│   └── Complianz RGPD
+│   ├── Optimisé performance (< 2s chargement)
+│   ├── Mobile-first responsive (Tailwind CSS)
+│   ├── SEO optimisé (next-seo, Schema.org, Open Graph)
+│   └── Composants réutilisables (Shadcn/ui)
+│
+├── Interface d'Administration (/admin)
+│   ├── Dashboard avec statistiques
+│   ├── Éditeur WYSIWYG (TipTap) type WordPress
+│   ├── Gestion médias (upload, crop, optimisation)
+│   ├── Gestion articles/actualités
+│   ├── Gestion pages
+│   ├── Gestion événements (calendrier)
+│   ├── Gestion équipe (membres)
+│   ├── Gestion menus (drag & drop)
+│   ├── Paramètres & personnalisation
+│   ├── Module sécurité (audit dépendances)
+│   └── Module mises à jour (notifications)
+│
+├── Backend (API Routes)
+│   ├── Authentification (NextAuth.js)
+│   ├── Base de données PostgreSQL
+│   ├── ORM Prisma
+│   ├── Validation Zod
+│   ├── Rate limiting
+│   └── Protection CSRF/XSS
+│
+├── Fonctionnalités Intégrées
+│   ├── Formulaires contact (Resend/Nodemailer)
+│   ├── Galerie photos (Lightbox)
+│   ├── Calendrier événements
+│   ├── Analytics (Google Analytics 4)
+│   ├── SEO automatique (sitemap, robots.txt)
+│   └── RGPD (module consentement)
+│
 └── Hébergement OVH
+    ├── Node.js runtime
+    ├── PostgreSQL database
     ├── SSL Let's Encrypt
+    ├── PM2 process management
+    ├── Nginx reverse proxy
     ├── Backups automatiques quotidiens
-    └── CDN OVH activé
+    └── Surveillance dépendances (Dependabot)
 ```
 
 ### 8.3 Nom de Domaine
@@ -1432,17 +1512,19 @@ WordPress 6.x
 - 📱 Score Google PageSpeed Insights > 80/100 mobile
 - 📱 Score Google PageSpeed Insights > 90/100 desktop
 
-**Techniques (WordPress + OVH):**
-- **Thème optimisé** : Développement custom léger, code propre
-- **Compression images** : Plugin Smush ou ShortPixel (WebP automatique)
-- **Lazy loading** : Natif WordPress 5.5+ + plugin optimisation
-- **Minification** : WP Rocket (CSS/JS/HTML) ou Autoptimize (gratuit)
-- **Cache** : WP Rocket (cache page, objet, navigateur) ou W3 Total Cache
-- **CDN OVH** : Activé dans panneau OVH (gratuit, inclus)
-- **Base de données** : Optimisation automatique WP Rocket
-- **GZIP** : Activé par défaut sur OVH
-- **Limite taille image** : 300 Ko max, WebP prioritaire
-- **Fonts** : Google Fonts optimisés (preload) ou fonts locaux
+**Techniques (Next.js + OVH):**
+- **Application optimisée** : Build statique (SSG) ou server-side (SSR) selon besoins
+- **Compression images** : Next/Image avec Sharp (WebP/AVIF automatique)
+- **Lazy loading** : Natif Next.js pour images et composants
+- **Minification** : Automatique dans build Next.js (CSS/JS/HTML)
+- **Cache** : Cache HTTP natif Next.js + cache OVH si disponible
+- **CDN** : Possibilité d'intégration Cloudflare (gratuit) ou CDN OVH
+- **Base de données** : Requêtes optimisées via Prisma ORM + indexation PostgreSQL
+- **GZIP/Brotli** : Compression automatique via Nginx
+- **Limite taille image** : 300 Ko max, formats modernes (WebP/AVIF)
+- **Fonts** : Fonts locaux optimisés avec next/font (preload automatique)
+- **Code splitting** : Automatique Next.js (lazy loading des composants)
+- **Tree shaking** : Élimination code non utilisé automatique
 
 ### 8.5 SEO (Référencement Naturel)
 
@@ -1493,20 +1575,82 @@ WordPress 6.x
 - ✅ Vidéos sous-titrées (si applicable)
 - ✅ Structure HTML sémantique
 
-### 8.7 Sécurité
+### 8.7 Sécurité & Maintenance
 
-**Mesures:**
-- ✅ HTTPS obligatoire (SSL inclus dans plateformes)
-- ✅ Protection anti-spam sur formulaires (reCAPTCHA ou honeypot)
-- ✅ Mises à jour régulières (WordPress + plugins si applicable)
-- ✅ Sauvegardes automatiques (hebdomadaires minimum)
-- ✅ Mots de passe forts pour admin
-- ✅ Limitation tentatives de connexion
-- ✅ Conformité RGPD :
-  - Politique de confidentialité
-  - Mentions légales
-  - Consentement cookies (si tracking)
-  - Droit d'accès/suppression données
+**Architecture sécurisée Next.js:**
+- ✅ **HTTPS obligatoire** : SSL Let's Encrypt automatique
+- ✅ **Headers de sécurité** :
+  - Content Security Policy (CSP)
+  - X-Frame-Options (protection clickjacking)
+  - X-Content-Type-Options
+  - Strict-Transport-Security (HSTS)
+  - Referrer-Policy
+- ✅ **Protection des données** :
+  - Variables d'environnement pour secrets (.env)
+  - Hachage bcrypt pour mots de passe
+  - Sessions sécurisées avec JWT
+  - Cookies HttpOnly et Secure
+
+**Protection applicative:**
+- ✅ **Rate limiting** : Limitation requêtes par IP (prévention DDoS)
+- ✅ **CSRF Protection** : Tokens anti-Cross-Site Request Forgery
+- ✅ **XSS Protection** : Sanitization des inputs utilisateur
+- ✅ **SQL Injection** : ORM Prisma avec requêtes paramétrées
+- ✅ **Validation stricte** : Zod pour toutes les entrées
+- ✅ **Protection anti-spam** : reCAPTCHA v3 ou honeypot sur formulaires
+- ✅ **Upload sécurisé** : Validation type/taille fichiers, scan antivirus optionnel
+
+**Authentification & accès:**
+- ✅ **NextAuth.js** : Gestion authentification sécurisée
+- ✅ **2FA disponible** : Authentification à deux facteurs
+- ✅ **Mots de passe forts** : Politique de complexité appliquée
+- ✅ **Limitation tentatives** : Blocage après 5 échecs
+- ✅ **Sessions** : Expiration automatique, révocation possible
+- ✅ **Rôles utilisateurs** : Admin, Éditeur, Auteur (principe moindre privilège)
+
+**Mises à jour et maintenance:**
+- ✅ **Surveillance automatique** :
+  - npm audit quotidien pour vulnérabilités
+  - Dependabot GitHub pour dépendances
+  - Notifications dans l'admin pour mises à jour critiques
+- ✅ **Interface de mise à jour** :
+  - Section dédiée dans l'admin
+  - Vue d'ensemble des dépendances (à jour/obsolètes/vulnérables)
+  - Mise à jour en un clic pour patches de sécurité
+  - Sauvegarde automatique avant mise à jour
+  - Rollback possible en cas de problème
+- ✅ **Changelog** : Historique des mises à jour effectuées
+- ✅ **Documentation** : Guide de mise à jour pour versions majeures
+
+**Sauvegardes automatiques:**
+- ✅ **Base de données** : Backup PostgreSQL quotidien
+- ✅ **Médias & fichiers** : Sauvegarde quotidienne
+- ✅ **Rétention** : 30 derniers jours conservés
+- ✅ **Restauration** : Interface admin pour restauration rapide
+- ✅ **Tests de backup** : Vérification mensuelle de l'intégrité
+
+**Monitoring & logs:**
+- ✅ **Logs d'accès** : Connexions admin, modifications importantes
+- ✅ **Logs d'erreurs** : Stack traces, debugging
+- ✅ **Logs de sécurité** : Tentatives connexion, blocages IP
+- ✅ **Alertes email** : Incidents sécurité critiques
+- ✅ **Dashboard sécurité** : Vue d'ensemble de l'état de sécurité
+
+**Conformité RGPD:**
+- ✅ **Politique de confidentialité**
+- ✅ **Mentions légales**
+- ✅ **Consentement cookies** : Banner avec choix granulaires
+- ✅ **Droit d'accès** : Export données personnelles
+- ✅ **Droit à l'oubli** : Suppression données utilisateur
+- ✅ **Minimisation** : Collecte uniquement données nécessaires
+- ✅ **Chiffrement** : Données sensibles chiffrées en base
+
+**Avantages sécurité Next.js vs WordPress:**
+- ✅ Moins de surface d'attaque (pas de plugins tiers)
+- ✅ Mises à jour simplifiées (dépendances npm vs plugins WP)
+- ✅ Contrôle total du code (audit possible)
+- ✅ Protection native TypeScript (typage fort)
+- ✅ Surveillance automatisée des vulnérabilités
 
 ### 8.8 Analytics & Tracking
 
@@ -1540,27 +1684,44 @@ WordPress 6.x
 
 #### 9.1.1 Palette de Couleurs
 
-**Couleurs Principales:**
+**Couleurs du Club TCC:**
 
-Option 1 - Classique Tennis:
-- **Primaire:** Vert tennis (#2E7D32 ou #4CAF50) - Rappelle les courts en gazon, dynamisme
-- **Secondaire:** Orange (#FF6F00 ou #FB8C00) - Énergie, balles de tennis
-- **Neutre:** Gris foncé (#424242) - Textes
-- **Blanc:** (#FFFFFF) - Backgrounds, respiration
+**Palette Principale (Couleurs officielles du club) :**
+- **Primaire - Bordeaux:** #8B1538 (ou #722F37 pour version plus douce) - Élégance, tradition, passion
+  - Utilisation : Header, footer, CTAs principaux, titres H1, liens importants
+  - Évoque : Prestige, excellence sportive, club historique
 
-Option 2 - Moderne & Local:
-- **Primaire:** Bleu profond (#1565C0) - Confiance, professionnalisme
-- **Secondaire:** Vert forêt (#2E7D32) - Nature, Yvelines
-- **Accent:** Orange vif (#FF6F00) - CTAs, dynamisme
-- **Neutre:** Gris (#616161) - Textes
+- **Secondaire - Blanc cassé:** #F8F6F0 (ou #FAF9F6) - Clarté, élégance, respiration
+  - Utilisation : Backgrounds principaux, cartes, sections alternées
+  - Évoque : Propreté, modernité, espaces aérés
 
-**Recommandation:** Aligner sur logo existant du club si disponible, sinon Option 1 (plus évocatrice tennis)
+- **Accent - Bordeaux foncé:** #5D1126 - Pour contraste et emphase
+  - Utilisation : Hover states, éléments actifs, bordures importantes
 
-**Utilisation:**
-- Primaire : Header, footer, CTAs principaux, titres H1
-- Secondaire : Boutons secondaires, liens, icônes
-- Accent : Éléments interactifs, hover states
-- Neutre : Corps de texte, descriptions
+- **Neutre - Gris chaud:** #4A4A4A - Textes et contenus
+  - Utilisation : Corps de texte, descriptions, labels
+
+- **Blanc pur:** #FFFFFF - Contraste maximal
+  - Utilisation : Textes sur fond bordeaux, zones de respiration
+
+**Palette Complémentaire (accents) :**
+- **Or doux:** #D4AF37 (optionnel) - Pour highlights, distinctions, badges
+- **Gris clair:** #E8E6E1 - Bordures, séparateurs subtils
+
+**Utilisation par composants:**
+- **Header** : Bordeaux (#8B1538) avec texte blanc
+- **Footer** : Bordeaux foncé (#5D1126) avec texte blanc cassé
+- **CTAs principaux** : Bordeaux (#8B1538) avec texte blanc, hover bordeaux foncé
+- **Boutons secondaires** : Outline bordeaux, fond transparent, hover fond blanc cassé
+- **Backgrounds** : Alternance blanc cassé (#F8F6F0) et blanc pur (#FFFFFF)
+- **Textes** : Gris chaud (#4A4A4A) sur fond clair, blanc sur fond bordeaux
+- **Liens** : Bordeaux (#8B1538), hover bordeaux foncé (#5D1126)
+- **Icônes** : Bordeaux ou gris chaud selon contexte
+
+**Accessibilité:**
+- Ratio contraste bordeaux/blanc : 8.5:1 (AAA) ✅
+- Ratio contraste gris/blanc cassé : 8.2:1 (AAA) ✅
+- Texte blanc sur bordeaux foncé : Très lisible ✅
 
 #### 9.1.2 Typographie
 
@@ -2108,20 +2269,22 @@ Option 2 - Moderne & Local:
 
 **Technique:**
 - [ ] Création compte OVH (ou hébergeur choisi)
-- [ ] Commande hébergement web Performance (OVH)
+- [ ] Commande hébergement VPS ou Node.js (OVH)
 - [ ] Réservation nom de domaine : tcclairefontaine.fr
-- [ ] Installation WordPress via module OVH 1-clic
+- [ ] Configuration serveur (Node.js, PostgreSQL, Nginx)
 - [ ] Configuration SSL Let's Encrypt (HTTPS)
 - [ ] Configuration emails @tcclairefontaine.fr
-- [ ] Briefing avec Claude Code pour développement thème custom
+- [ ] Setup repository GitHub et environnement de développement
+- [ ] Briefing avec Claude Code pour développement application
 
 **Livrables:**
 - ✅ Équipe projet constituée
 - ✅ Textes rédigés et validés
 - ✅ Banque de photos prête
 - ✅ Hébergement OVH actif
-- ✅ WordPress installé
+- ✅ Serveur Node.js + PostgreSQL configuré
 - ✅ Domaine configuré
+- ✅ Environnement de développement prêt
 
 ### 11.2 Phase 1 : MVP - Lancement (Semaines 3-8)
 
@@ -2129,27 +2292,30 @@ Option 2 - Moderne & Local:
 
 #### Tâches:
 
-**Semaines 3-4 : Développement Thème Custom (Claude Code)**
-- [ ] Installation plugins essentiels :
-  - Rank Math SEO ou Yoast SEO
-  - Contact Form 7
-  - Smush (optimisation images)
-  - Wordfence Security
-  - UpdraftPlus Backup
-  - The Events Calendar
-  - Complianz RGPD
-  - WP Rocket (optionnel, recommandé)
-- [ ] Développement thème WordPress custom par Claude Code :
+**Semaines 3-4 : Développement Application (Claude Code)**
+- [ ] Setup architecture Next.js :
+  - Initialisation projet Next.js 14+ avec TypeScript
+  - Configuration Tailwind CSS + Shadcn/ui
+  - Setup Prisma ORM + PostgreSQL
+  - Configuration NextAuth.js (authentification)
+  - Setup structure de dossiers
+- [ ] Développement backend :
+  - Schéma base de données (Pages, Articles, Événements, Équipe, Médias, Formulaires)
+  - API Routes pour CRUD operations
+  - Middleware d'authentification
+  - Validation Zod
+  - Rate limiting
+- [ ] Développement frontend public :
   - Structure HTML5 sémantique
   - Design responsive mobile-first selon maquettes PRD
-  - Palette couleurs et typographie (Montserrat + Open Sans)
+  - Palette couleurs bordeaux/blanc cassé et typographie (Montserrat + Open Sans)
   - Templates pages : Accueil, Page standard, Contact, Archives
-  - Custom Post Types : Équipe, Événements (si non géré par plugin)
-- [ ] Configuration WordPress :
-  - Paramètres permaliens (/nom-page/)
-  - Création pages principales (structure)
-  - Configuration menus (Header + Footer)
-  - Configuration widgets
+  - Composants réutilisables (Header, Footer, Cards, Buttons)
+- [ ] Développement interface admin :
+  - Dashboard avec statistiques
+  - Layout d'administration
+  - Système de navigation admin
+  - Authentification et protection des routes
 
 **Semaines 5-6 : Contenu Pages Principales**
 - [ ] Page Accueil :
@@ -2653,91 +2819,86 @@ Signature :
 
 ### 13.6 Annexe F : Budget Détaillé (12 mois)
 
-#### Option 1 : WordPress avec Plugins Gratuits (Budget Minimum)
+#### Budget Next.js + Admin Custom (Solution Retenue)
 
 | Poste | Détail | Coût An 1 | Récurrent |
 |-------|--------|-----------|-----------|
 | **Hébergement & Infrastructure** | | | |
-| Hébergement OVH | Performance ou équivalent (~6€/mois) | 70€ | Oui (70€/an) |
+| Hébergement OVH | VPS Starter ou hébergement Node.js (~10€/mois) | 120€ | Oui (120€/an) |
+| Base de données PostgreSQL | Incluse dans VPS ou service géré (~5€/mois) | 0-60€ | Oui (0-60€/an) |
 | Nom de domaine | tcclairefontaine.fr | 12€ | Oui (12€/an) |
+| SSL Let's Encrypt | Gratuit | 0€ | Oui (gratuit) |
 | **Développement** | | | |
-| Thème WordPress Custom | Développé par Claude Code | 0€ | - |
-| Plugins | Tous gratuits (voir liste section 8.2) | 0€ | Oui |
+| Application Next.js Custom | Développée par Claude Code | 0€ | - |
+| Interface Admin Custom | Développée par Claude Code | 0€ | - |
+| Dépendances npm | Toutes open-source gratuites | 0€ | Oui (gratuit) |
 | **Contenus** | | | |
 | Session photos | Bénévole ou amateur (0€) ou Pro (100-200€) | 0-100€ | Ponctuel |
 | Rédaction textes | Bénévoles | 0€ | - |
 | **Outils Gratuits** | | | |
-| Google Analytics | Gratuit | 0€ | Oui |
+| Google Analytics 4 | Gratuit | 0€ | Oui |
 | Google Search Console | Gratuit | 0€ | Oui |
 | Canva Free (designs) | Gratuit | 0€ | Oui |
-| **Communication** | | | |
-| Flyers lancement | 100 flyers A5 couleur | 20€ | Ponctuel |
-| Affiches | 10 affiches A3 | 15€ | Ponctuel |
-| **Divers** | | | |
-| Imprévus / Petits frais | Marge sécurité | 20€ | - |
-| **TOTAL ANNÉE 1 (Min)** | | **137-237€** | |
-| **TOTAL ANNÉES SUIVANTES** | | **~82-102€/an** | |
-
-#### Option 2 : WordPress avec Plugins Premium (Budget Recommandé)
-
-| Poste | Détail | Coût An 1 | Récurrent |
-|-------|--------|-----------|-----------|
-| **Hébergement & Infrastructure** | | | |
-| Hébergement OVH | Performance (~8€/mois) | 95€ | Oui (95€/an) |
-| Nom de domaine | tcclairefontaine.fr | 12€ | Oui (12€/an) |
-| **Développement** | | | |
-| Thème WordPress Custom | Développé par Claude Code | 0€ | - |
-| **Plugins Premium** | | | |
-| WP Rocket | Performance & Cache (49$/an) | 45€ | Oui (45€/an) |
-| Rank Math Pro (optionnel) | SEO avancé | 0€ | - (gratuit suffit) |
-| Autres plugins | Gratuits (voir liste section 8.2) | 0€ | Oui |
-| **Contenus** | | | |
-| Session photos | Photographe amateur doué (0-50€) ou Pro (100-200€) | 0-100€ | Ponctuel |
-| Rédaction textes | Bénévoles | 0€ | - |
-| **Outils** | | | |
-| Google Analytics | Gratuit | 0€ | Oui |
-| Google Search Console | Gratuit | 0€ | Oui |
-| Canva Pro (optionnel) | Designs avancés | 0€ | - (gratuit suffit) |
+| GitHub (repository) | Gratuit | 0€ | Oui |
+| **Services Email (optionnel)** | | | |
+| Resend (100 emails/jour gratuit) | Gratuit ou Pro si volume | 0-20€ | Oui (0-20€/an) |
+| **Monitoring & Sécurité** | | | |
+| Dependabot GitHub | Gratuit | 0€ | Oui |
+| Backups automatiques | Inclus VPS ou script custom | 0€ | Oui |
 | **Communication** | | | |
 | Flyers lancement | 100 flyers A5 couleur | 20€ | Ponctuel |
 | Affiches | 10 affiches A3 | 15€ | Ponctuel |
 | **Divers** | | | |
 | Imprévus / Maintenance | Marge sécurité | 30€ | - |
-| **TOTAL ANNÉE 1 (Recommandé)** | | **217-317€** | |
-| **TOTAL ANNÉES SUIVANTES** | | **~152-172€/an** | |
+| **TOTAL ANNÉE 1** | | **197-357€** | |
+| **TOTAL ANNÉES SUIVANTES** | | **132-192€/an** | |
 
-#### Comparatif Budgets
+#### Comparatif avec alternatives
 
-| Scenario | An 1 | Années suivantes | Notes |
-|----------|------|------------------|-------|
-| **Minimum (tout gratuit)** | 137-237€ | 82-102€/an | Faisable, performances correctes |
-| **Recommandé (WP Rocket)** | 217-317€ | 152-172€/an | Meilleures performances, facilité maintenance |
-| **Premium (tous plugins pro)** | 300-450€ | 200-300€/an | Non nécessaire pour ce projet |
+| Solution | An 1 | Années suivantes | Avantages | Inconvénients |
+|----------|------|------------------|-----------|---------------|
+| **Next.js + Admin Custom (Retenu)** | 197-357€ | 132-192€/an | Performance maximale, Sécurité renforcée, Mises à jour facilitées, Interface sur-mesure | Setup initial plus technique |
+| **WordPress** | 137-317€ | 82-172€/an | Écosystème riche | Plugins tiers, Sécurité à maintenir, Moins de contrôle |
+| **SaaS (Wix, Squarespace)** | 200-400€ | 200-400€/an | Simple à utiliser | Coûts récurrents élevés, Limité, Pas de contrôle |
 
-**Recommandation Budget :** **Option 2 (Recommandé)** - Investissement initial ~250€, puis ~160€/an. Le WP Rocket justifie largement son coût (performances, SEO, facilité).
+**Recommandation Budget :** **Next.js + Admin Custom** - Investissement initial ~280€, puis ~160€/an. Performance optimale, sécurité renforcée, et coûts maîtrisés sur le long terme.
 
-**Note:** Le développement du site par Claude Code (0€) représente une économie de 1500-5000€ par rapport à un développeur humain.
+**Économies réalisées :** Le développement par Claude Code (application complète + interface admin) représente une économie de **2500-8000€** par rapport à un développeur humain.
+
+**Avantages budgétaires :**
+- ✅ Pas de plugins premium à payer
+- ✅ Pas de dépendance à des services tiers coûteux
+- ✅ Mises à jour gratuites via dépendances npm
+- ✅ Contrôle total = moins de coûts cachés
+- ✅ Performance optimale = meilleur ROI marketing
 
 ### 13.7 Annexe G : Contacts & Ressources Utiles
 
 **Hébergement & Infrastructure:**
 - OVH : https://www.ovhcloud.com/fr/ / Support : https://www.ovh.com/fr/support/
 - Panneau client OVH : https://www.ovh.com/auth/
-- Documentation OVH WordPress : https://help.ovhcloud.com/csm/fr-web-hosting-cms-install-manually-wordpress
+- Documentation OVH VPS : https://help.ovhcloud.com/csm/fr-vps-getting-started
+- Documentation OVH Node.js : https://help.ovhcloud.com/csm/fr-web-hosting-nodejs
 
-**WordPress:**
-- Site officiel WordPress : https://fr.wordpress.org
-- Support WordPress FR : https://wpfr.net/support/
-- Documentation officielle : https://wordpress.org/documentation/
-- Codex WordPress FR : https://codex.wordpress.org/fr:Accueil
+**Framework & Technologies:**
+- Next.js Documentation : https://nextjs.org/docs
+- Next.js Learn (tutoriels) : https://nextjs.org/learn
+- React Documentation : https://react.dev
+- TypeScript Documentation : https://www.typescriptlang.org/docs/
+- Tailwind CSS : https://tailwindcss.com/docs
+- Shadcn/ui : https://ui.shadcn.com
 
-**Plugins Recommandés:**
-- WP Rocket : https://wp-rocket.me/fr/
-- Rank Math SEO : https://rankmath.com
-- Contact Form 7 : https://contactform7.com
-- The Events Calendar : https://theeventscalendar.com
-- Wordfence Security : https://www.wordfence.com
-- UpdraftPlus Backup : https://updraftplus.com
+**Backend & Database:**
+- Prisma ORM : https://www.prisma.io/docs
+- PostgreSQL Documentation : https://www.postgresql.org/docs/
+- NextAuth.js : https://next-auth.js.org
+- Zod Validation : https://zod.dev
+
+**Composants & Outils:**
+- TipTap Editor : https://tiptap.dev
+- React Hook Form : https://react-hook-form.com
+- Resend (emails) : https://resend.com/docs
+- Recharts (graphiques) : https://recharts.org
 
 **Outils Analytics:**
 - Google Analytics 4 : https://analytics.google.com
