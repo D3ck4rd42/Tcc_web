@@ -270,7 +270,7 @@ Créer une présence en ligne qui reflète l'authenticité du TCC : un club de v
 | ID | User Story | Critères d'Acceptation | Priorité |
 |----|------------|------------------------|----------|
 | US-05 | En tant que **prospect intéressé**, je veux pouvoir contacter facilement le club pour poser des questions | - Page "Contact" accessible<br>- Formulaire de contact simple (nom, email, téléphone, message)<br>- Coordonnées directes (email, tél)<br>- Horaires d'ouverture secrétariat | P0 |
-| US-06 | En tant que **parent**, je veux pré-inscrire mon enfant en ligne pour gagner du temps | - Formulaire de pré-inscription (ou d'inscription complète si plateforme le permet)<br>- Champs: nom enfant, âge, niveau, coordonnées parents<br>- Confirmation par email automatique | P0 |
+| US-06 | En tant que **parent ou adhérent**, je veux m'inscrire ou pré-inscrire mon enfant en ligne pour gagner du temps | - Formulaire d'inscription complète (reprenant tous les champs du formulaire papier)<br>- Champs coordonnées complètes (nom, prénom, adresse, email, téléphone, date de naissance, licence, classement)<br>- Sélection type d'adhésion et calcul automatique du tarif<br>- Engagement certificat médical<br>- Choix modalités de paiement (1 fois ou 3 fois)<br>- Autorisation droit à l'image<br>- Confirmation par email automatique | P0 |
 | US-07 | En tant que **visiteur mobile**, je veux que le site s'affiche parfaitement sur mon smartphone pour consulter les infos en mobilité | - Design 100% responsive<br>- Navigation adaptée mobile<br>- Temps de chargement < 3s<br>- Boutons CTA faciles à cliquer | P0 |
 
 #### Epic 3 : Valorisation & Crédibilité
@@ -471,20 +471,57 @@ Créer une présence en ligne qui reflète l'authenticité du TCC : un club de v
 
 **Contenu:**
 - ✅ **Tableau des tarifs** (clair, responsive) :
-  - Adhésion Adulte (ex: 380€/an)
-  - Adhésion Jeune (segmenté par âge)
-  - Adhésion Famille (si applicable)
-  - Cours collectifs inclus ou en supplément
-  - Location de court (membres vs non-membres)
+
+  **ADHESION SIMPLE (Saison 2024-25)**
+  | Catégorie | Adhésion | Licence FFT | TOTAL |
+  |-----------|----------|-------------|-------|
+  | Jeune (2002-2017) | 80€ | 23€ | **103€** |
+  | 2ème jeune (même famille) | 70€ | 23€ | **93€** |
+  | 3ème jeune et + (même famille) | 60€ | 23€ | **83€** |
+  | Adulte | 140€ | 33€ | **173€** |
+  | 2ème Adulte (même famille) | 130€ | 33€ | **163€** |
+  | 3ème Adulte et + (même famille) | 120€ | 33€ | **153€** |
+  | Droit de jeu Invité | 130€ | - | **130€** |
+
+  **ADHESION + COURS COLLECTIFS (29 semaines)**
+  | Catégorie | Adhésion | Licence | Cours | TOTAL |
+  |-----------|----------|---------|-------|-------|
+  | Enfants (nés en 2018 et après) | 13€ | - | 190€ | **203€** |
+  | Jeunes (nés entre 2002 et 2017) | 80€ | 23€ | 270€ | **373€** |
+  | Adultes | 140€ | 33€ | 350€ | **523€** |
+
+  **COURS COLLECTIFS 2ème PERSONNE (même famille)**
+  | Catégorie | Adhésion | Licence | Cours | TOTAL |
+  |-----------|----------|---------|-------|-------|
+  | Jeunes | 70€ | 23€ | 270€ | **363€** |
+  | Adultes | 130€ | 33€ | 350€ | **513€** |
+
+  **OPTIONS SUPPLÉMENTAIRES**
+  - Deuxième heure de cours jeunes : **140€**
+  - Parent jouant uniquement avec son enfant inscrit : **60€**
+
+  **FORMULE BINÔMES**
+  | Catégorie | Adhésion | Licence | Cours | TOTAL |
+  |-----------|----------|---------|-------|-------|
+  | Deux joueurs Jeunes (2006-2017) | 80€ | 23€ | 396€ | **499€** |
+  | Deux joueurs Adultes | 140€ | 33€ | 416€ | **589€** |
+
 - ✅ **Avantages inclus** :
-  - Accès aux courts (mention du court couvert)
+  - Accès aux courts (incluant le court couvert pour jouer toute l'année)
   - Participation aux événements du club
   - Tarifs préférentiels stages
-  - etc.
+  - Licence FFT (Fédération Française de Tennis) incluse dans les tarifs
+
 - ✅ **Modalités d'inscription** :
-  - Pièces à fournir (certificat médical, photo, etc.)
-  - Périodes d'inscription
-  - Moyens de paiement acceptés
+  - **Pièces à fournir** :
+    - Certificat médical d'aptitude à la pratique du tennis loisir ou/et en compétition (obligatoire pour les enfants)
+    - Photo d'identité
+    - Coordonnées complètes (voir formulaire d'inscription)
+  - **Périodes d'inscription** : Inscription pour la saison 2024-25 (septembre à juin)
+  - **Moyens de paiement acceptés** :
+    - Chèques bancaires
+    - Paiement en 3 fois possible : 1er chèque (Octobre), 2ème chèque (Janvier), 3ème chèque (Avril)
+  - **Droit à l'image** : Autorisation demandée pour prise de photos lors des activités tennistiques (OUI/NON)
 - ✅ **Formulaire de pré-inscription** ou bouton "Devenir membre"
 - ✅ **Section FAQ** : Réponses aux questions fréquentes
   - "Puis-je essayer avant de m'inscrire ?" → Oui, séance découverte
@@ -887,11 +924,75 @@ Paramètres
 - ✅ **Intégration** : Insertion directe dans les pages via l'éditeur
 
 **Formulaires pré-configurés (livrés avec site) :**
+
 1. **Formulaire Contact général** : Page Contact
-2. **Formulaire Pré-inscription Enfants** : Page Cours Enfants
-3. **Formulaire Pré-inscription Adultes** : Page Cours Adultes
-4. **Formulaire Séance Découverte** : Page d'accueil ou Cours
-5. **Formulaire Demande d'information** : Multiple pages
+   - Champs : Nom, Prénom, Email, Téléphone, Sujet (menu déroulant), Message
+
+2. **Formulaire Pré-inscription / Inscription Complète** : Page Adhésion & Tarifs
+   - **Section Coordonnées** :
+     - NOM (requis)
+     - PRÉNOM (requis)
+     - ADRESSE (requis)
+     - CODE POSTAL (requis)
+     - VILLE (requis)
+     - TÉLÉPHONE (requis)
+     - ADRESSE MAIL (requis, validation email)
+     - DATE DE NAISSANCE (requis, sélecteur de date)
+     - N° LICENCE FFT (optionnel)
+     - CLASSEMENT FFT (optionnel, dropdown)
+
+   - **Section Certificat Médical** :
+     - Case à cocher : "Je m'engage à fournir un certificat médical d'aptitude à la pratique du tennis loisir ou/et en compétition" (requis pour les enfants)
+     - Upload fichier certificat médical (optionnel, type: PDF/JPG)
+
+   - **Section Adhésion** :
+     - Type d'adhésion (dropdown) :
+       * Adhésion Simple (Jeune / Adulte / Invité)
+       * Adhésion + Cours Collectifs
+       * Formule Binômes
+     - Catégorie (auto-calculé selon date de naissance ou sélection manuelle)
+     - Nombre de personnes de la même famille déjà inscrites (pour calcul tarif dégressif)
+     - Options supplémentaires (checkboxes) :
+       * Deuxième heure de cours jeunes
+       * Parent jouant uniquement avec enfant inscrit
+
+   - **Section Paiement** :
+     - Montant TOTAL (auto-calculé)
+     - Mode de paiement : Paiement en 1 fois ou 3 fois (radio buttons)
+     - Si 3 fois : Montants des 3 chèques (calculés automatiquement)
+       * CHÈQUE n°1 (Octobre) : ____ €
+       * CHÈQUE n°2 (Janvier) : ____ €
+       * CHÈQUE n°3 (Avril) : ____ €
+
+   - **Section Droit à l'Image** :
+     - Radio buttons : "J'autorise mon enfant (ou moi-même) à être pris en photo dans le cadre de ses activités tennistiques :"
+       * OUI
+       * NON
+
+   - **Validation & Soumission** :
+     - Case à cocher RGPD : "J'accepte que mes données soient utilisées dans le cadre de mon inscription" (requis)
+     - Bouton "Valider mon inscription"
+     - Message de confirmation : "Votre demande d'inscription a bien été enregistrée. Nous vous contacterons sous 48h."
+
+3. **Formulaire Pré-inscription Enfants Simplifié** : Page Cours Enfants (version courte)
+   - Nom de l'enfant, Prénom, Date de naissance
+   - Nom parent, Prénom parent, Email, Téléphone
+   - Créneau souhaité (dropdown)
+   - Message (optionnel)
+
+4. **Formulaire Pré-inscription Adultes Simplifié** : Page Cours Adultes (version courte)
+   - Nom, Prénom, Email, Téléphone
+   - Niveau approximatif (dropdown : Débutant / Intermédiaire / Avancé / Compétiteur)
+   - Créneau souhaité (dropdown)
+   - Message (optionnel)
+
+5. **Formulaire Séance Découverte** : Page d'accueil ou Cours
+   - Nom, Prénom, Email, Téléphone
+   - Type : Adulte / Enfant (âge)
+   - Date souhaitée (sélecteur)
+
+6. **Formulaire Demande d'information** : Multiple pages
+   - Nom, Prénom, Email, Téléphone, Message
 
 #### 6.4.6 Gestion des Menus
 
@@ -1644,6 +1745,16 @@ Application Next.js 14+
 - ✅ **Droit à l'oubli** : Suppression données utilisateur
 - ✅ **Minimisation** : Collecte uniquement données nécessaires
 - ✅ **Chiffrement** : Données sensibles chiffrées en base
+- ✅ **Données collectées via formulaire d'inscription** :
+  - Données d'identité : Nom, Prénom, Date de naissance
+  - Coordonnées : Adresse complète, Email, Téléphone
+  - Données sportives : N° Licence FFT, Classement FFT, Certificat médical
+  - Données contractuelles : Type d'adhésion, Montant, Modalités de paiement
+  - Consentements : Droit à l'image (OUI/NON explicite)
+  - Stockage sécurisé PostgreSQL avec chiffrement des données sensibles
+  - Accès limité aux responsables du club uniquement
+  - Conservation : Durée de l'adhésion + 3 ans (obligations légales comptables)
+  - Export CSV possible pour gestion administrative (avec contrôle d'accès strict)
 
 **Avantages sécurité Next.js vs WordPress:**
 - ✅ Moins de surface d'attaque (pas de plugins tiers)
@@ -2795,7 +2906,46 @@ Signature :
 (Pour les mineurs, signature du parent/tuteur légal obligatoire)
 ```
 
-### 13.5 Annexe E : Calendrier Éditorial (Exemple Mois 1)
+### 13.5 Annexe E : Formulaire d'Inscription Papier (Document Source)
+
+**Document de référence :** `FORMULAIRE INSCRIPTIONS 2024-25.pdf`
+
+Ce formulaire papier officiel du Tennis Club Clairefontaine pour la saison 2024-25 contient toutes les informations exactes concernant :
+
+**Structure du formulaire :**
+
+1. **Coordonnées complètes à collecter** :
+   - NOM, PRÉNOM, ADRESSE, CODE POSTAL, VILLE
+   - TÉLÉPHONE, ADRESSE MAIL
+   - DATE DE NAISSANCE
+   - N° LICENCE FFT, CLASSEMENT FFT
+
+2. **Certificat médical** :
+   - Engagement obligatoire pour les enfants : "Je m'engage à fournir un certificat médical d'aptitude à la pratique du tennis loisir ou/et en compétition pour les enfants"
+
+3. **Grilles tarifaires détaillées** :
+   - **Adhésion simple** : Jeunes (2002-2017) et Adultes avec tarifs dégressifs famille
+   - **Adhésion + Cours collectifs 29 semaines** : 3 catégories (Enfants 2018+, Jeunes 2002-2017, Adultes)
+   - **Options** : Deuxième heure de cours jeunes, Parent accompagnant
+   - **Formule Binômes** : Deux joueurs (Jeunes ou Adultes)
+   - **Droit de jeu Invité** : 130€
+
+4. **Modalités de paiement** :
+   - Possibilité de paiement en 3 fois par chèques
+   - Échéances : Octobre, Janvier, Avril
+
+5. **Droit à l'image** :
+   - Autorisation explicite OUI/NON pour photos lors des activités tennistiques
+
+**Usage dans le développement :**
+- Le formulaire d'inscription en ligne doit reprendre **exactement** tous ces champs
+- Les tarifs doivent être mis à jour chaque saison en cohérence avec le formulaire papier
+- Le calcul automatique des tarifs doit suivre la même logique (dégressivité familiale, licence FFT, cours collectifs)
+- Les formulaires simplifiés (pré-inscription rapide) peuvent n'inclure qu'un sous-ensemble de ces champs
+
+**Note importante :** Ce document papier reste la référence officielle pour la saison 2024-25. Tout écart entre le site web et ce formulaire doit être validé par le bureau du club.
+
+### 13.6 Annexe F : Calendrier Éditorial (Exemple Mois 1)
 
 | Semaine | Date | Type | Sujet | Plateforme | Responsable |
 |---------|------|------|-------|------------|-------------|
